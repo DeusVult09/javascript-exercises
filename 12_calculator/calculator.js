@@ -14,8 +14,7 @@ const sum = function(numbers) {
 
 
 const multiply = function(numbers) {
-  //return a * b;
-  return numbers.reduce((acc, current) => acc * current, 0); 
+  return numbers.reduce((acc, current) => acc * current); 
 };
 
 
@@ -27,8 +26,10 @@ const power = function(a, b) {
 
 const factorial = function(n) {
 	let result = 1;
-  for (let i = 2; i <= n; i++)
+  for (let i = 2; i <= n; i++) {
     result *= i;
+  }
+  return result; 
 };
 
 
